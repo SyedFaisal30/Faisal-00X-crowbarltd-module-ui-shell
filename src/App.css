@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500 ;
+  font-style: normal;
+}
+
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+.logoup{
+ 
+ font-size: 19px;
+ justify-content: center;
+ align-items: center;
+ display: flex;
+ 
+ width: 123px;
+}
+
+
+.logodown{
+  font-size: 25px;
+   display: flex;
+  justify-content: center;
+ align-items: center;
+  width: 130px;
+}
+
+.mainlogo{
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat";
+  color: #2E3A46
+  
+}
+.Navhead{
+  display: flex;
+  padding-top: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+
+.discover {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  padding: 10px 35px;
+  border-radius: 30px;
+
+  background: linear-gradient(299deg, rgba(46, 58, 70, 1) 0%, rgba(0, 188, 212, 1) 50%, rgba(46, 58, 70, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+  background-clip: text; 
+  border: 2px solid #2E3A46;
+}
+
+
+.nav-links{
+  display: flex;
+  list-style-type: none;
+  gap: 10px;
+  font-family: "Open Sans";
+  font-size: larger;
+  font-weight: 30px;
+  background-color: #00BCD4;
+  border-radius: 20px;
+  padding: 10px 30px;
+  color: #ffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  
+  
+}
+
+
+
+.buttons-nav{
+  padding: 5px 20px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
