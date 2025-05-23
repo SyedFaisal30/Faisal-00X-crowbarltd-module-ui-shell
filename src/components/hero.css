@@ -3,19 +3,44 @@
   color: white;
   text-align: center;
   padding: 80px 20px;
+  overflow: hidden;
 }
 
-.hero h1 {
+/* Animations for Heading and Subtext */
+.hero-heading {
   font-family: 'Montserrat', sans-serif;
   font-size: 48px;
   margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeSlideInTop 0.8s ease forwards;
 }
 
-.hero p {
+.hero-subtext {
   font-size: 18px;
   margin-bottom: 30px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideInBottom 0.8s ease forwards;
+  animation-delay: 0.3s;
 }
 
+/* Keyframe animations */
+@keyframes fadeSlideInTop {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideInBottom {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Primary Button with 3D & Glow Effect */
 .primary-btn {
   background-color: #00BCD4;
   color: white;
@@ -24,10 +49,24 @@
   font-weight: bold;
   font-size: 16px;
   cursor: pointer;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
+  border-radius: 8px;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    text-shadow 0.3s ease;
+  box-shadow: 0 6px 14px rgba(0, 188, 212, 0.25);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .primary-btn:hover {
   background-color: #00aabf;
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 188, 212, 0.4);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.primary-btn:active {
+  transform: scale(0.98) translateY(2px);
+  box-shadow: 0 4px 10px rgba(0, 188, 212, 0.2);
 }
