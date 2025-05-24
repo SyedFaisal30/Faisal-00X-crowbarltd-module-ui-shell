@@ -6,9 +6,8 @@
   overflow: hidden;
 }
 
-/* Animations for Heading and Subtext */
 .hero-heading {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat';
   font-size: 48px;
   margin-bottom: 20px;
   opacity: 0;
@@ -17,6 +16,7 @@
 }
 
 .hero-subtext {
+  font-family: 'Montserrat';
   font-size: 18px;
   margin-bottom: 30px;
   opacity: 0;
@@ -40,8 +40,8 @@
   }
 }
 
-/* Primary Button with 3D & Glow Effect */
 .primary-btn {
+  font-family: 'Montserrat';
   background-color: #00BCD4;
   color: white;
   border: none;

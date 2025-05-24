@@ -8,9 +8,11 @@
 .footer p {
   margin: 0 0 10px;
   font-size: 14px;
+  font-family: 'Montserrat';
 }
 
 .footer-links {
+  font-family: 'Montserrat';
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -23,13 +25,13 @@
   text-decoration: none;
   font-size: 14px;
   transition: text-decoration 0.3s;
+  font-family: 'Montserrat';
 }
 
 .footer-links a:hover {
   text-decoration: underline;
 }
 
-/* ✅ Responsive tweaks for smaller screens */
 @media (max-width: 600px) {
   .footer {
     padding: 30px 15px;

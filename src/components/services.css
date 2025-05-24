@@ -3,10 +3,10 @@
   padding: 80px 20px;
   text-align: center;
   overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .services-heading {
-  font-family: 'Montserrat', sans-serif;
   font-size: 36px;
   color: #2E3A46;
   margin-bottom: 40px;
@@ -21,41 +21,25 @@
   gap: 5%;
 }
 
-/* Card wrapper with 20% width and relative position */
 .service-card-wrapper {
   width: 20%;
   position: relative;
 }
 
-/* Floating background with subtle black glow */
-/* .card-bg {
-  position: absolute;
-  top: 0;
-  right: 10%;
-  width: 20%;
-  bottom: -5%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 12px;
-  filter: blur(8px);
-  z-index: 0;
-} */
-
-/* Main card */
 .service-card {
   position: relative;
-  background-color: white; /* keep if you want white bg */
+  background-color: white;
   padding: 30px;
   border-radius: 12px;
   box-shadow:
-    8px 8px 15px rgba(0, 0, 0, 0.45),   /* strong right-bottom shadow */
-    -4px 3px 10px rgba(0, 0, 0, 0.06);   /* subtle left shadow */
+    8px 8px 15px rgba(0, 0, 0, 0.45),
+    -4px 3px 10px rgba(0, 0, 0, 0.06);
   opacity: 0;
   transform: perspective(1000px) translateY(-6px) scale(1.02);
   animation: fadeInCard 0.6s ease forwards;
   z-index: 1;
+  font-family: 'Montserrat', sans-serif;
 }
-
 
 .service-icon {
   font-size: 40px;
@@ -64,13 +48,11 @@
 
 .service-title {
   font-size: 20px;
-  font-family: 'Open Sans', sans-serif;
   color: #2E3A46;
   margin-bottom: 10px;
 }
 
 .service-description {
-  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   color: #555;
 }
@@ -101,7 +83,62 @@
   box-shadow: 0 2px 6px rgba(0, 188, 212, 0.2);
 }
 
-/* Animations */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center; 
+  box-shadow:
+    8px 12px 30px rgba(0, 0, 0, 0.3),
+    -2px 2px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeSlideInTop 0.4s ease forwards;
+}
+
+.modal-content h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #2E3A46;
+}
+
+.modal-content p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.close-button {
+  margin-top: 2%;
+  padding: 10px 20px;
+  font-size: 15px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block; 
+}
+
+.close-button:hover {
+  background-color: #cc0000;
+}
+
 @keyframes fadeInCard {
   to {
     opacity: 1;
@@ -116,7 +153,6 @@
   }
 }
 
-/* Responsive: stack cards vertically on smaller screens */
 @media (max-width: 768px) {
   .services-flex {
     flex-direction: column;

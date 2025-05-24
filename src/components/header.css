@@ -11,10 +11,11 @@
   z-index: 1000;
   flex-wrap: wrap;
   width: 100%;
+  font-family: 'Montserrat';
 }
 
 .logo {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat';
   font-size: 24px;
   font-weight: bold;
   color: #2E3A46;
@@ -24,6 +25,7 @@
 
 .logo span {
   color: #00BCD4;
+  font-family: 'Montserrat';
 }
 
 .nav-links {
@@ -36,7 +38,7 @@
 .nav-links a {
   text-decoration: none;
   font-weight: 500;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat';
   color: #2E3A46;
   transition: color 0.3s;
 }
