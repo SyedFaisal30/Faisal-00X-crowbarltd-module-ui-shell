@@ -12,6 +12,7 @@
   flex-wrap: wrap;
   width: 100%;
   font-family: 'Montserrat';
+  width: 100%;
 }
 
 .logo {
@@ -20,7 +21,6 @@
   font-weight: bold;
   color: #2E3A46;
   flex-shrink: 0;
-
 }
 
 .logo span {
@@ -55,11 +55,10 @@
 
   .logo {
     font-size: 18px;
-    width: 40%;
+    width: 30%;
   }
 
   .nav-links {
-    width: 60%;
     gap: 8px;
     display: flex;
     justify-content: center;
